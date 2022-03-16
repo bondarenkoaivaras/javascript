@@ -31,3 +31,28 @@ baldai.unshift('spintele');
 baldai.slice(2, 1, "taure", "sakute");
 
 console.log(baldai);
+
+const saldytuas = {
+    morkos: 3,
+
+}
+
+const skaiciai = [0, 5, 29, 23, 4, 5, 2, 5, 24, 89, 6, 5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16];
+const biggerThan8 = [];
+for(let i = 0; i < skaiciai.length; i ++){
+    if(skaiciai[i] > 8 ) biggerThan8.push(skaiciai[i]);
+}
+
+const activities = [
+    ['Work', 9],
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7]
+  ];
+
+for(let i = 0; i < activities.length; i ++){
+    for(let j = 0; j < activities[i].length; j ++){
+        console.log(activities[i][j]);
+    }
+}
