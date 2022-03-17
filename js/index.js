@@ -152,3 +152,25 @@ function kartoriniaiSkaiciai(x, y){
     printArray(arrayXY);
 }
 kartoriniaiSkaiciai();
+
+
+// Uzduotis parasyti funkcija kuri surusiuos skaicius esancius masyve nuo didziausio iki maziausio
+const randomNumbers = [1, 22, 543, 2, 6, 12, 55, 86, 6, 9, 12, 31, 51, 92, 3]
+// isvesti nauja masyva i console
+
+randomNumbers.sort((a , b) => a - b).reverse();
+console.log(randomNumbers);
+
+function getMidSymbol(text){
+
+    let midIndex = parseInt(text.length / 2);
+    console.log(midIndex);
+
+    if(text.length % 2 === 0){
+        return `${text[midIndex -1]}${text[midIndex]}`;
+    }
+    
+    return text[midIndex];
+}
+
+console.log(getMidSymbol("asdasdasdasd"));
