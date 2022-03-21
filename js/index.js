@@ -100,7 +100,7 @@
 // function getSum(numArray){
 //     let sum = 0;
 
-//     for(let num of numArray){
+//     for(let num of numArray){T
 //         if(!isNaN(num)){
 //             sum += num;
 //         }
@@ -164,7 +164,6 @@ console.log(randomNumbers);
 function getMidSymbol(text){
 
     let midIndex = parseInt(text.length / 2);
-    console.log(midIndex);
 
     if(text.length % 2 === 0){
         return `${text[midIndex -1]}${text[midIndex]}`;
@@ -173,4 +172,13 @@ function getMidSymbol(text){
     return text[midIndex];
 }
 
-console.log(getMidSymbol("asdasdasdasd"));
+const septyniuKartotinis = function(num) {
+    if(num % 7 === 0){
+        console.log("Taip");
+    }else{
+        console.log("Ne");
+    }
+}
+
+septyniuKartotinis(7);
+
