@@ -93,6 +93,7 @@
 
 // let day = parseInt(prompt("Enter number from 1 to 7 to get a day"));
 
+
 // getDay(day);
 
 // const sudetiVisusSkaicius = [12, 4, 16, 3, 8, 9, 'hi', 12, 2, 1, 5, 3, 9, 55, 292, 13, undefined]
@@ -254,3 +255,46 @@ console.log(combined);
 const firstArrayAnimals = ["dog", "cat", "parrot"];
 const secondArrayAnimals = ["lizard", "rat", "cat"];
 
+const darbai = ['paimti darbus is masyvo', 'parasyti funkcija', 
+'funckija turi skurti DOM elementus', 
+'tie elementai turi buti sudeti i tevini ul konteineri'];
+
+const container = document.querySelector(".container");
+console.log(container)
+
+const addToParent = (jobs) => {
+
+    const parent = document.querySelector(".container");
+    
+    jobs.forEach(element => {
+        let childContainer = document.createElement("div");
+       childContainer.className = "job_card";
+
+        childContainer.innerHTML = `
+            <h2>${element.title}</h2>
+            <p> ${element.description}</p>
+            <p> ${element.salary}</p>
+        `;
+
+        parent.appendChild(childContainer);
+    })
+    
+}
+
+addToParent([
+    {
+        title: "programuotojas",
+        description: "Lorem ipsum dolor sit amet.",
+        salary: "10000000000000"
+    },
+    {
+        title: "programuotojas2",
+        description: "Lorem ipsum dolor sit amet.",
+        salary: "10000000000000"
+    },
+    {
+        title: "programuotojas3",
+        description: "Lorem ipsum dolor sit amet.",
+        salary: "10000000000000"
+    }
+])
