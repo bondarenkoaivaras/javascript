@@ -182,3 +182,75 @@ const septyniuKartotinis = function(num) {
 
 septyniuKartotinis(7);
 
+const knygosApieProgramavima = [
+    {
+      title: "The Pragmatic Programmer",
+      author: 'David Thomas',
+      goodReadsRating: 4.33,
+      numberOfRatings: 18579
+    },
+    {
+      title: "Clean Code",
+      author: 'Robert C. Martin',
+      goodReadsRating: 4.39,
+      numberOfRatings: 18094
+    },
+    {
+      title: "The Clean Coder",
+      author: 'Robert C. Martin',
+      goodReadsRating: 4.28,
+      numberOfRatings: 7459
+    },
+    {
+      title: "The Effective Engineer",
+      author: 'Edmond Lau',
+      goodReadsRating: 4.28,
+      numberOfRatings: 1401
+    },
+    {
+      title: "Eloquent JavaScript",
+      author: 'Marijn Haverbeke',
+      goodReadsRating: 4.15,
+      numberOfRatings: 2680
+    }
+  ]
+
+  knygosApieProgramavima.forEach(printObject);
+
+
+  function printObject(obj){
+      console.log(`Title: ${obj.title}
+                  Author: ${obj.title}
+                  Good ratings: ${obj.goodReadsRating}
+                  numberOfRatings: ${obj.numberOfRatings}
+                  `);
+  }
+
+  const bookRatings = knygosApieProgramavima.map(function(x){
+    return x.goodReadsRating;
+  });
+
+  console.log(bookRatings);
+
+  const bestBookRatings = knygosApieProgramavima.filter(book => {
+      if(book.goodReadsRating > 4.2){
+          return book.goodReadsRating;
+      }
+    })
+
+    console.log(bestBookRatings);
+
+  
+
+let firstArr = [1, 2, 3, 4, 5];
+let secondArr = [6, 7, 8, 9, 10];
+
+let combined = firstArr.concat(secondArr);
+
+console.log(combined);
+
+
+
+const firstArrayAnimals = ["dog", "cat", "parrot"];
+const secondArrayAnimals = ["lizard", "rat", "cat"];
+
